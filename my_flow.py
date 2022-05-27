@@ -9,10 +9,16 @@ def get_data():
 def print_data(data):
     print("adjusted on purpose")
     print(data)
+    
+    @task
+def print_data2():
+    print("blablabla")
+
 
 with Flow("example") as flow:
     data = get_data()
     print_data(data)
+    print_data2()
 
 flow.storage = Git(
     repo="celitoasmus/prefect",
