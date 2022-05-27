@@ -7,6 +7,7 @@ def get_data():
 
 @task
 def print_data(data):
+    print("adjusted on purpose")
     print(data)
 
 with Flow("example") as flow:
