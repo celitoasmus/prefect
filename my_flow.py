@@ -10,7 +10,7 @@ def print_data(data):
     print("adjusted on purpose")
     print(data)
     
-    @task
+@task
 def print_data2():
     print("blablabla")
 
