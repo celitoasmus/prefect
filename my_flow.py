@@ -1,5 +1,5 @@
-from prefect import task, Flow                                                                                                                                                                from prefect.storage import Git
-
+from prefect import task, Flow
+from prefect.storage import Git
 @task
 def get_data():
     return [1, 2, 3, 4, 5]
