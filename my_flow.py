@@ -15,5 +15,6 @@ with Flow("example") as flow:
 
 flow.storage = Git(
     repo="celitoasmus/prefect",
-    path="my_flow.py"
+    flow_path="my_flow.py",
+    repo_host="github.com"
 )
