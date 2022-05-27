@@ -1,5 +1,4 @@
-from prefect import task, Flow
-from prefect.storage import Git
+from prefect import task, Flow                                                                                                                                                                from prefect.storage import Git
 
 @task
 def get_data():
@@ -9,7 +8,7 @@ def get_data():
 def print_data(data):
     print("adjusted on purpose")
     print(data)
-    
+
 @task(log_stdout=True)
 def print_data2():
     print("blablabla")
