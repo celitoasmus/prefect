@@ -6,12 +6,12 @@ def get_data():
     return [1, 2, 3, 4, 5]
 
 @task
-def print_data(data):
+def print_data(log_stdout=True, data):
     print("adjusted on purpose")
     print(data)
     
 @task
-def print_data2():
+def print_data2(log_stdout=True):
     print("blablabla")
 
 
