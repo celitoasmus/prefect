@@ -5,13 +5,13 @@ from prefect.storage import Git
 def get_data():
     return [1, 2, 3, 4, 5]
 
-@task
-def print_data(log_stdout=True, data):
+@task(log_stdout=True)
+def print_data(data):
     print("adjusted on purpose")
     print(data)
     
-@task
-def print_data2(log_stdout=True):
+@task(log_stdout=True)
+def print_data2():
     print("blablabla")
 
 
